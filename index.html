@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olalekan's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://kit.fontawesome.com/1b6433a55a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo1.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>   
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FULL Stack Developer Enthusiast </p>
+                <h1>Hi, I'm <span>Olalekan</span><br> Alagbe</h1>
+            </div>
+        </div>
+    </div>
+
+                 <!-- ABOUT SECTION -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/userUpdate.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A highly motivated first class graduate of statistics. An altruistic person who does not 
+                        just care about his remuneration but always concern about the overall growth and profit of the 
+                        establishment he works in. A complication analyzer who readily adjust to changes, able to work 
+                        independently and give results that transcend expectations. In a society where business tycoons 
+                        are constantly in need of trustworthy and hardworking workforce, he is there not only to serve with 
+                        skills and hard work but also with honesty, faithfulness and complete transparency. Prioritizes 
+                        honesty and faithfulness above self and loves to go about organization matters with the same zeal, 
+                        alacrity and carefulness he would set out if the company is his.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span> <br> Frontend web apps development</li>
+                            <li><span>App Development</span> <br> Backend web development</li>
+                            <li><span>Data analytics</span> <br> Data analysis and interpretation </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 2022 - Current</span> <br>Web development training at FreeCodeCamp</li>
+                            <li><span>Nov 2021 - Current</span> <br>Funds transfer officer at Zenith bank plc</li>
+                            <li><span>May 2021 - October 2021 </span> <br> Cash & Teller officer at Zenith bank plc</li>
+                            <li><span>Nov 2019 - Nov 2020</span> <br> Graduate assistant at Kebbi State University, Aleiro </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2020 </span> <br> National Youth Service Corp Certificate </li>
+                            <li><span>2015 - 2019 </span> <br> Bachelor of Science in Statistics </li>
+                            <li><span>2010 - 2013 </span> <br> Senior Secondary School Certificate. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- ------------------ SERVICES -------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I design and build beautiful and responsive front end web applications</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Backend web Dev</h2>
+                    <p>I design and build Backend for web applications</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Data analytics</h2>
+                    <p>I analyze and interpret data to extract meaningful and useful information</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------PORTFOLIO -------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                 <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The App connects you with friends and family across with world. Download it from playstore.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="Images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The App connects you with friends and family across with world. Download it from playstore.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="Images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The App connects you with friends and family across with world. Download it from playstore.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                 </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- ----------------CONTACT--------------- -->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i>alagbeolalekan1000@gmail.com</p>
+                <p> <i class="fas fa-phone-square-alt"></i>+2348102525792</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Images/OlalekanJoshuaAlagbeCV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form id="form">
+                    <input type="text" name="Name" required placeholder="What is your name">
+                    <input type="email" name="Email" required placeholder="Please provide your email">
+                    <textarea name="Message" rows="6" required placeholder="Please provide your comment here"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+       <p>Copyright © Olalekan <i class="fas fa-heart"></i></p> 
+    </div>
+</div>
+    <script src="main.js"></script>
+<script>
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+
+</body>
+</html>
